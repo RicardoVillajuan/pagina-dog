@@ -68,15 +68,15 @@
 }
 .banner__logo-titulo i{
     color: #69ec65;
-    font-size: 43px;
+    font-size: 25px;
     margin-right: 20px;
 }
 .banner__logo-titulo h1{
     color: #ffffff;
-    font-size: 49px;
+    font-size: 36px;
 }
 .banner__logo-bars i{
-    font-size: 40px;
+    font-size: 34px;
     cursor: pointer;
 }
 .banner__enlace{
@@ -105,7 +105,7 @@
 }
 .titulo{
     position: absolute;
-    top: 38%;
+    top: 43%;
     left: 50%;
     transform: translateX(-50%) translatey(-50%);
     width: 100%;
@@ -116,6 +116,9 @@
 .titulo__titulo h1{
     font-size: 35px;
 }
+.titulo__titulo h2{
+    margin: 36px 0;
+}
 .titulo__titulo p{
     font-size: 18px;
 }
@@ -123,7 +126,7 @@
     margin: 0 auto;
     cursor: pointer;
     position: absolute;
-    top: 66%;
+    top: 76%;
     left: 50%;
     transform: translateX(-50%) translatey(-50%);
     display: flex;
