@@ -117,14 +117,14 @@
     font-size: 35px;
 }
 .titulo__titulo h2{
-    margin: 36px 0;
+    margin: 50px 0;
 }
 .titulo__titulo p{
     font-size: 18px;
 }
 .button{
     margin: 0 auto;
-    cursor: pointer;
+    
     position: absolute;
     top: 76%;
     left: 50%;
@@ -159,11 +159,11 @@ section{
 }
 .nosotros__titulo-titulo{
     font-size: 47px;
-    color: #2D2438;
+    color: #282729;
     text-align: center;
 }
 .nosotros__titulo-raya{
-    background:  #2D2438;
+    background: #69ec65;
     width: 100px;
     height: 4px;
     margin: auto;
@@ -191,6 +191,7 @@ section{
     background: rgb(216, 216, 216);
     margin: 30px 25px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.329);
+    border: 1px solid #020202a9;
 }
 .cards__img{
     margin-bottom: 16px;
@@ -203,7 +204,7 @@ section{
     position: absolute;
     top: 0;
     right: 0;
-    height: 98%;
+    height: 99%;
 }
 .cards__before{
     position: relative;
