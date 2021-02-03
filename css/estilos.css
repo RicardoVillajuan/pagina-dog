@@ -60,6 +60,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 25px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
 }
 
 .banner__logo-titulo{
@@ -68,7 +72,7 @@
 }
 .banner__logo-titulo i{
     color: #69ec65;
-    font-size: 25px;
+    font-size: 32px;
     margin-right: 20px;
 }
 .banner__logo-titulo h1{
@@ -79,6 +83,12 @@
     font-size: 34px;
     cursor: pointer;
 }
+.banner__logo-scroll{
+    background: #242329;
+    transition: all 0.4s;
+}
+
+
 .banner__enlace{
     color: #ffffff;
     display: block;
@@ -91,7 +101,7 @@
 }
 .banner__navegacion{
     width: 250px;
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 100vh;
     background: #242329;
