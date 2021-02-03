@@ -105,7 +105,7 @@
 }
 .titulo{
     position: absolute;
-    top: 50%;
+    top: 38%;
     left: 50%;
     transform: translateX(-50%) translatey(-50%);
     width: 100%;
@@ -120,15 +120,33 @@
     font-size: 18px;
 }
 .button{
-    background: #52526C;
-    width: 150px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin: 44px  auto;
+    margin: 0 auto;
     cursor: pointer;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translateX(-50%) translatey(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
 }
 .button:hover{
     background: #39394d;
+}
+.button__name{
+    background: #69ec65;
+    width: 160px;
+    border-radius: 33px;
+    padding: 13px 39px;
+
+}
+.color__transparente{
+    background: none;
+    border: 2px solid #69ec65; 
+    color: #69ec65;
 }
 /* 
     --------------------NOSOTROSSSS----------------
@@ -165,7 +183,7 @@ section{
     justify-content: center;
 }
 .cards{
-    max-width: 326px;
+    max-width: 476px;
     text-align: center;
     background: rgb(216, 216, 216);
     margin: 30px 25px;
@@ -189,7 +207,7 @@ section{
 }
 .cards__img-img{
     width: 100%;
-    height: 226px;
+    height: 303px;
     object-fit: cover;
 }
 
