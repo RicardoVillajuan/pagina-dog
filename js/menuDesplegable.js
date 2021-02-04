@@ -10,6 +10,7 @@ window.onscroll=function(){
         document.getElementById('banner__logo-principal').style.top='0';
     }else{
         document.getElementById('banner__logo-principal').style.top='-100px';
+        document.getElementById('banner__logo-principal').style.background='#000000be';
     }
     ubicacionPrincipal=desplazamientoActual;
 }
