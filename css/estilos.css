@@ -88,9 +88,8 @@
     font-size: 34px;
     cursor: pointer;
 }
-.banner__logo-scroll{
-    background: #242329;
-    transition: all 0.4s;
+.banner__logo-none{
+    background: none;
 }
 
 
@@ -407,6 +406,7 @@ section{
         width: 25%;
         margin-right: 41px;
     }
+
 }
 @media(min-width:1280px){
     .razas__contenedor{
