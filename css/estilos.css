@@ -406,7 +406,37 @@ section{
         width: 25%;
         margin-right: 41px;
     }
-
+    /* 
+        -------Responsive Menu
+    */
+}
+@media(min-width:1000px){
+    .banner{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+    }
+    .banner__logo{
+        position: static;
+        width: 32%;
+    }
+    .banner__logo-bars{
+        display: none;
+    }
+    .banner__navegacion{
+        background: none;
+        left: 0;
+        display: flex;
+        width: 100%;
+        position: static;
+        height: auto;
+        transition: none;
+        justify-content: space-around;
+    }
+    .banner__enlace{
+        border: none;
+        padding: 0%;
+    }
 }
 @media(min-width:1280px){
     .razas__contenedor{
