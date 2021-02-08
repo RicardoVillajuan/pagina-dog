@@ -259,20 +259,20 @@ section{
 /* 
                     -----------------
 */
-.razas{
+.beneficios{
     width: 100%;
     height: 1084px;
     position: relative;
 }
-.razas__banner{
+.beneficios__banner{
     position: relative;
 }
-.razas__banner-img{
+.beneficios__banner-img{
     width: 100%;
     height: 1084px;
     object-fit: cover;
 }
-.razas__banner:before{
+.beneficios__banner:before{
     content: "";
     position: absolute;
     top: 0;
@@ -281,16 +281,16 @@ section{
     width: 100%;
     height: 1084px;
 }
-.razas__contenido{
+.beneficios__contenido{
     position: absolute;
     top: 0;
     width: 100%;
     padding: 20px 25px;
 }
-.razas__contenido-caja{
+.beneficios__contenido-caja{
     margin: 20px 0;
 }
-.razas__contenido-caja>i{
+.beneficios__contenido-caja>i{
     /* display: flex; */
     width: 100%;
     text-align: center;
@@ -299,7 +299,7 @@ section{
     font-size: 67px;
 }
 
-.razas__contenido-titulo{
+.beneficios__contenido-titulo{
     text-align: center;
     margin: 30px 0;
     color: #ffffff;
@@ -319,10 +319,120 @@ section{
 }
 
 /* 
-
+----------------------FOOTERRRRRR
 */
+.white{
+    color: #ffffff;
+}
+.green{
+    color: #69ec65;
+}
+.red{
+ color: #ec6565;   
+}
+.blue{
+    color: #656eec;
+}
+.ligthblue{
+    color: #65ecec;
+}
+/* --------------------------------------- */
+
+.footer{
+    width: 100%;
+    height: 590px;
+    position: relative;
+    
+}
+
+.footer__img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.footer__img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.911);
+    width: 100%;
+    height: 100%;
+}
+.footer__img-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer__contenido{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    /* margin: 25px; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__caja{
+    padding: 25px 0;
+    width: 202px;
+    margin: 0 auto;
+}
 
 
+.footer__caja-logo-titulo{
+    font-size: 28px;
+}
+.footer__caja-texto{
+    color: #ffffff;
+    margin: 25px 0 25px 0;
+}
+.footer__caja-redes{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__caja-redes > i{
+    font-size: 15px;
+    padding: 6px 13px;
+    border-radius: 10px;
+    color: #ffffff
+}
+.footer__caja-redes >i:nth-child(0n+1){
+    background: rgb(9, 90, 211);
+    
+}
+.footer__caja-redes >i:nth-child(0n+2){
+    background: rgb(9, 187, 211);
+}
+.footer__caja-redes >i:nth-child(0n+3){
+    background: rgb(9, 211, 117);
+}
+.footer__caja-redes >i:nth-child(0n+4){
+    background: rgb(211, 9, 9);
+}
+/* .footer__caja-titulo{
+    
+} */
+.footer__caja-contenido > p:nth-child(2n+2){
+    color: #69ec65;
+}
+.footer__caja-contenido p{
+    margin-top: 10px;
+}
+.footer__creador{
+    
+}
+.footer__creador{
+    width: 100%;
+    color: #ffffff98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__creador > i{
+    color: rgba(211, 9, 9, 0.555);
+    margin: 0 10px 0 10px;
+}
 
 
 
@@ -341,13 +451,13 @@ section{
 
 */
 @media(min-width:444px){
-    .razas{
+    .beneficios{
         height: 1000px;
     }
-    .razas__banner-img{
+    .beneficios__banner-img{
         height: 1000px;
     }
-    .razas__banner:before{
+    .beneficios__banner:before{
         height: 1000px;
     }
 }
@@ -360,38 +470,38 @@ section{
     }
 }
 @media(min-width:600px){
-    .razas__contenido-caja{
+    .beneficios__contenido-caja{
         display: flex;
         align-items: center;
     }
     /* .text__h3,.text__p{
         text-align: justify;
     } */
-    .razas{
+    .beneficios{
         height: 673px;
     }
-    .razas__banner-img{
+    .beneficios__banner-img{
         height: 673px;
     }
-    .razas__banner:before{
+    .beneficios__banner:before{
         height: 673px;
     }
-    .razas__contenido-caja>i{
+    .beneficios__contenido-caja>i{
         width: 50%;
     }
-    .razas__contenido-titulo{
+    .beneficios__contenido-titulo{
         margin: 30px auto;
         padding: 0 60px;
     }
 }
 @media(min-width:750px){
-    .razas{
+    .beneficios{
         height: 632px;
     }
-    .razas__banner-img{
+    .beneficios__banner-img{
         height: 632px;
     }
-    .razas__banner:before{
+    .beneficios__banner:before{
         height: 632px;
     }
 }
@@ -400,10 +510,15 @@ section{
         max-width: 326px;
     }
 }
+@media(min-width:808px){
+    .footer{
+        height: 323px;
+    }
+}
 
 @media(min-width:863px){
     
-    .razas__contenido-caja>i{
+    .beneficios__contenido-caja>i{
         width: 25%;
         margin-right: 41px;
     }
@@ -441,32 +556,32 @@ section{
     }
 }
 @media(min-width:1280px){
-    .razas__contenedor{
+    .beneficios__contenedor{
         display: flex;
         padding: 0px 199px;
         justify-content: center;
     }
-    .razas__contenido-caja{
+    .beneficios__contenido-caja{
         padding: 33px 31px;
     }
-    .razas{
+    .beneficios{
         height: 632px;
     }
-    .razas__banner-img{
+    .beneficios__banner-img{
         height: 632px;
     }
-    .razas__banner:before{
+    .beneficios__banner:before{
         height: 632px;
     }
 }
 @media(min-width:1440px){
-    .razas{
+    .beneficios{
         height: 535px;
     }
-    .razas__banner-img{
+    .beneficios__banner-img{
         height: 535px;
     }
-    .razas__banner:before{
+    .beneficios__banner:before{
         height: 535px;
     }
 }
