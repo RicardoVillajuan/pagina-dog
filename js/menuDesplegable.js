@@ -3,37 +3,73 @@ let menuNavegacion=document.getElementById("menu-principal");
 btnMenu.addEventListener("click",function(){
     menuNavegacion.classList.toggle("mostrar")
 });
+
+// -----------------------Toda la parte del banner scroll
+
 let ubicacionPrincipal=window.pageYOffset;
-let banner=document.getElementById("banner__logo-inportante");
-window.onscroll=function(){
-    let desplazamientoActual=window.pageYOffset;
-    if(screen.width<=1000){
-        if(ubicacionPrincipal>=desplazamientoActual){
-            document.getElementById('banner__logo-principal').style.top='0';
-            if(desplazamientoActual==0){
-                document.getElementById('banner__logo-principal').style.background='none';
-                document.getElementById('banner__logo-principal').style.transition='all 0.8s';
+
+if(window.innerWidth<=1000){
+    window.onscroll=function(){
+        let desplazamientoActual=window.pageYOffset;
+            if(ubicacionPrincipal>=desplazamientoActual){
+                document.getElementById('banner__logo-principal').style.top='0';
+                if(desplazamientoActual==0){
+                    document.getElementById('banner__logo-principal').style.transition='all 0.8s';
+                }
+            }else{
+                document.getElementById('banner__logo-principal').style.top='-100px';
             }
-        }else{
-            document.getElementById('banner__logo-principal').style.top='-100px';
-            document.getElementById('banner__logo-principal').style.background='#000000be';
-            
-        }
-        ubicacionPrincipal=desplazamientoActual;
-    }else{
-        if(ubicacionPrincipal>=desplazamientoActual){
-            document.getElementById('banner__logo-inportante').style.top='0';
-            if(desplazamientoActual==0){
-                document.getElementById('banner__logo-inportante').style.background='none';
-                document.getElementById('banner__logo-inportante').style.transition='all 0.8s';
-            }
-        }else{
-            document.getElementById('banner__logo-inportante').style.top='-100px';
-            document.getElementById('banner__logo-inportante').style.background='#000000be';
-            
-        }
         ubicacionPrincipal=desplazamientoActual;
     }
+}else{
+    document.getElementById('banner__logo-principal').style.background='none';
+    document.getElementById('banner__logo-inportante').style.background='#000000be';
+    
+    window.onresize=function(){
+        anchoVentana=window.innerWidth;
 
+        if(anchoVentana<=1000){
+            document.getElementById('banner__logo-principal').style.background='#000000be';
+            window.onscroll=function(){
+                let desplazamientoActual=window.pageYOffset;
+                    if(ubicacionPrincipal>=desplazamientoActual){
+                        document.getElementById('banner__logo-principal').style.top='0';
+                        if(desplazamientoActual==0){
+                            document.getElementById('banner__logo-principal').style.transition='all 0.8s';
+                        }
+                    }else{
+                        document.getElementById('banner__logo-principal').style.top='-100px';
+                    }
+                ubicacionPrincipal=desplazamientoActual;
+            }
+        }else{
+            document.getElementById('banner__logo-principal').style.background='none';
+            document.getElementById('banner__logo-inportante').style.background='#000000be';
+            window.onscroll=function(){
+                let desplazamientoActual=window.pageYOffset;
+                    if(ubicacionPrincipal>=desplazamientoActual){
+                        document.getElementById('banner__logo-inportante').style.top='0';
+                        if(desplazamientoActual==0){
+                            document.getElementById('banner__logo-inportante').style.transition='all 0.8s';
+                        }
+                    }else{
+                        document.getElementById('banner__logo-inportante').style.top='-100px';
+                    }
+                ubicacionPrincipal=desplazamientoActual;
+            }
+        }
+    }
+
+    window.onscroll=function(){
+        let desplazamientoActual=window.pageYOffset;
+            if(ubicacionPrincipal>=desplazamientoActual){
+                document.getElementById('banner__logo-inportante').style.top='0';
+                if(desplazamientoActual==0){
+                    document.getElementById('banner__logo-inportante').style.transition='all 0.8s';
+                }
+            }else{
+                document.getElementById('banner__logo-inportante').style.top='-100px';
+            }
+        ubicacionPrincipal=desplazamientoActual;
+    }
 }
-

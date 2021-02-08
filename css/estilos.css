@@ -68,6 +68,7 @@
     width: 100%;
     transition: top 0.3s;
     z-index: 100;
+    background: #000000be;
     /* color: #000000be; */
 }
 
@@ -415,6 +416,7 @@ section{
         display: flex;
         justify-content: space-between;
         position: fixed;
+        z-index: 10;
     }
     .banner__logo{
         position: static;
