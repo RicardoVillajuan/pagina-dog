@@ -364,13 +364,13 @@ section{
 
 
 .contacto__banner-icon{
-    margin-top: 17px;
+    margin-top: 37px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .contacto__banner-icon > i{
-    font-size: 60px;
+    font-size: 19px;
 }
 .contacto__banner-icon > i:nth-child(0n+1){
     background: #69ec65;
@@ -413,7 +413,9 @@ section{
     padding-top: 35px;
     color: #282729;
 }
-
+.contacto__formulario-envio{
+    width: 100%;
+}
 /* 
 ----------------------FOOTERRRRRR
 */
@@ -436,7 +438,7 @@ section{
 
 .footer{
     width: 100%;
-    height: 590px;
+    height: 700px;
     position: relative;
     
 }
@@ -471,7 +473,7 @@ section{
 }
 .footer__caja{
     padding: 25px 0;
-    width: 202px;
+    width: 139px;
     margin: 0 auto;
 }
 
@@ -546,6 +548,17 @@ section{
                             RESPONSIVE
 
 */
+@media(min-width:400px){
+    .contacto__banner-icon > i {
+        font-size: 50px;
+    }
+    .footer{
+        height: 595px;
+    }
+    .footer__caja{
+        width: 202px
+    }
+}
 @media(min-width:444px){
     .beneficios{
         height: 1000px;
@@ -555,6 +568,9 @@ section{
     }
     .beneficios__banner:before{
         height: 1000px;
+    }
+    .contacto__banner-icon {
+        margin-top: 50px;
     }
 }
 @media(min-width:530px){
@@ -574,6 +590,9 @@ section{
         /* padding-right: 10px; */
 
     }
+    /* .contacto__banner-icon > i {
+        font-size: 50px;
+    } */
 }
 @media(min-width:600px){
     .beneficios__contenido-caja{
@@ -601,6 +620,13 @@ section{
     }
     .contacto__banner-icon{
         margin-top: 62px;
+    }
+    /* titulo */
+    .titulo__titulo h1 {
+        font-size: 55px;
+    }
+    .titulo__titulo h2 {
+        font-size: 30px;
     }
 }
 @media(min-width:750px){
