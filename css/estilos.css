@@ -126,7 +126,7 @@ html{
     position: fixed;
     top: 0px;
     height: 100vh;
-    background: #131212;
+    background: black;
     left: -100%;
     transition: all 1s;
     z-index: 1000;
