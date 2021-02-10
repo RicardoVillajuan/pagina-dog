@@ -107,7 +107,7 @@
 .banner__navegacion{
     width: 250px;
     position: fixed;
-    top: 0;
+    top: 0px;
     height: 100vh;
     background: #242329;
     left: -100%;
@@ -117,6 +117,7 @@
 }
 .mostrar{
     left: 0;
+    
 }
 .titulo{
     position: absolute;
@@ -227,7 +228,7 @@ section{
     width: 100%;
 }
 .cards__img-texto{
-    margin: 12px 27px;
+    margin: 12px 8px;
 }
 .cards__before{
     position: relative;
@@ -250,15 +251,16 @@ section{
 
 .datos{
     display: flex;
-    margin: 31px 0;
+    margin: 17px 0;
     justify-content: center;
 }
 .datos__button{
-    padding: 4px 15px;
-    border: 2px solid #69ec65;
+    padding: 4px 19px;
+    border: 2px solid #34c52f;
     border-radius: 9px;
     background: #69ec65;
     color: #ffffff;
+    cursor: pointer;
 }
 
 /* 
@@ -420,6 +422,26 @@ section{
 }
 .contacto__formulario-envio{
     width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+.contacto__formulario-envio input{
+    width: 200px;
+    margin: 0 auto;
+    padding: 8px 20px;
+    color: #ffffff;
+    border-radius: 33px;
+}
+.button__contacto:nth-child(0n+1){
+    background: #69ec65;
+    
+    border: 2px solid #0ac404;
+}
+.button__contacto:nth-child(0n+2){
+    background: #ec6565;
+    color: #ffffff;
+    border-radius: 33px;
+    border: 2px solid #771212;
 }
 /* 
 ----------------------FOOTERRRRRR
@@ -644,6 +666,9 @@ section{
     .beneficios__banner:before{
         height: 632px;
     }
+    .{
+        padding: 4px 84px;
+    }
 }
 @media(min-width:753px){
     .cards{
@@ -721,11 +746,20 @@ section{
     .contacto__banner-icon > i{
         font-size: 32px;
     }
+    .titulo__titulo h1 {
+        font-size: 74px;
+    }
+    .titulo{
+        top: 49%;
+    }
+    .button{
+        top: 82%;
+    }
 }
 @media(min-width:1280px){
     .beneficios__contenedor{
         display: flex;
-        padding: 0px 199px;
+        padding: 0px 86px;
         justify-content: center;
     }
     .beneficios__contenido-caja{
