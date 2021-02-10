@@ -87,10 +87,14 @@ html{
 .banner__logo-titulo h1{
     color: #ffffff;
     font-size: 36px;
+    animation: rubberBand;
+    animation-duration: 1s;
 }
 .banner__logo-bars i{
     font-size: 34px;
     cursor: pointer;
+    animation: rubberBand;
+    animation-duration: 1s;
 }
 .banner__logo-none{
     background: none;
@@ -104,6 +108,8 @@ html{
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     font-weight: 700;
     cursor: pointer;
+    animation: rubberBand;
+    animation-duration: 1s;
 }
 .banner__enlace>i{
     margin-right: 30px;
@@ -142,10 +148,14 @@ html{
 }
 .titulo__titulo h1{
     font-size: 35px;
+    animation: rubberBand;
+    animation-duration: 1s;
 }
 .titulo__titulo h2{
     margin: 50px 0;
     color: #69ec65;
+    animation: rubberBand;
+    animation-duration: 1s;
 }
 .titulo__titulo p{
     font-size: 18px;
@@ -172,6 +182,8 @@ html{
     width: 160px;
     border-radius: 33px;
     padding: 13px 39px;
+    animation: rubberBand;
+    animation-duration: 1s;
 
 }
 .color__transparente{
